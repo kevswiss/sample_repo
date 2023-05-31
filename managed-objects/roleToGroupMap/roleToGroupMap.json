@@ -1,0 +1,66 @@
+{
+  "name": "roleToGroupMap",
+  "schema": {
+    "$schema": "http://forgerock.org/json-schema#",
+    "description": null,
+    "icon": "fa-align-justify",
+    "order": [
+      "custom_role_name",
+      "custom_group_dn",
+      "custom_app_name",
+      "groupDns"
+    ],
+    "properties": {
+      "custom_app_name": {
+        "deleteQueryConfig": false,
+        "description": "The name of the application to which the role belongs",
+        "isVirtual": false,
+        "searchable": true,
+        "title": "App name",
+        "type": "string",
+        "userEditable": true,
+        "viewable": true
+      },
+      "custom_group_dn": {
+        "deleteQueryConfig": false,
+        "description": "Distinguished name of the ActiveDirectory Group",
+        "isVirtual": false,
+        "searchable": true,
+        "title": "Group DN",
+        "type": "string",
+        "userEditable": true,
+        "viewable": true
+      },
+      "custom_role_name": {
+        "deleteQueryConfig": false,
+        "description": "The name of the role",
+        "isVirtual": false,
+        "searchable": true,
+        "title": "Role Name",
+        "type": "string",
+        "userEditable": true,
+        "viewable": true
+      },
+      "groupDns": {
+        "deleteQueryConfig": false,
+        "description": null,
+        "isVirtual": false,
+        "items": {
+          "type": "string"
+        },
+        "searchable": false,
+        "title": "Group distinguished names",
+        "type": "array",
+        "userEditable": true,
+        "viewable": true
+      }
+    },
+    "required": [
+      "custom_role_name",
+      "custom_group_dn",
+      "groupDns"
+    ],
+    "title": null,
+    "type": "object"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "_id": "3bffb10f-3982-4524-aad4-4c6ee31e0dd4",
+  "_outcomes": [
+    {
+      "displayName": "Social Authentication",
+      "id": "socialAuthentication"
+    }
+  ],
+  "_rev": "-415639613",
+  "_type": {
+    "_id": "SelectIdPNode",
+    "collection": true,
+    "name": "Select Identity Provider"
+  },
+  "filteredProviders": [],
+  "identityAttribute": "mail",
+  "includeLocalAuthentication": false,
+  "offerOnlyExisting": false,
+  "passwordAttribute": "password"
+}

@@ -1,0 +1,15 @@
+{
+  "_id": "e0aa13fb-0e32-4799-b309-0008cf9e8815",
+  "context": "AUTHENTICATION_TREE_DECISION_NODE",
+  "createdBy": "null",
+  "creationDate": 0,
+  "default": false,
+  "description": "null",
+  "language": "JAVASCRIPT",
+  "lastModifiedBy": "null",
+  "lastModifiedDate": 0,
+  "name": "hl-get-secure-number",
+  "script": {
+    "file": "scripts-content/AUTHENTICATION_TREE_DECISION_NODE/hl-get-secure-number.js"
+  }
+}

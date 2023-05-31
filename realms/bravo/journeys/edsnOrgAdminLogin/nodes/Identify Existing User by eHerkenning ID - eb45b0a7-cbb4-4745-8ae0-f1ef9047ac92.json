@@ -1,0 +1,21 @@
+{
+  "_id": "eb45b0a7-cbb4-4745-8ae0-f1ef9047ac92",
+  "_outcomes": [
+    {
+      "displayName": "True",
+      "id": "true"
+    },
+    {
+      "displayName": "False",
+      "id": "false"
+    }
+  ],
+  "_rev": "1388477944",
+  "_type": {
+    "_id": "IdentifyExistingUserNode",
+    "collection": true,
+    "name": "Identify Existing User"
+  },
+  "identifier": "frIndexedString1",
+  "identityAttribute": "frIndexedString1"
+}

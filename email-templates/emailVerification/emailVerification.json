@@ -1,0 +1,25 @@
+{
+  "_id": "emailTemplate/emailVerification",
+  "defaultLocale": "en",
+  "displayName": "emailVerification",
+  "enabled": true,
+  "from": "\"ServiceDeskAdmin\" <service.desk@tvh.com>",
+  "html": {
+    "en": {
+      "file": "emailVerification.en.html"
+    }
+  },
+  "message": {
+    "en": {
+      "file": "emailVerification.en.md"
+    }
+  },
+  "mimeType": "text/html",
+  "styles": {
+    "file": "emailVerification.css"
+  },
+  "subject": {
+    "en": "Email Verification"
+  },
+  "templateId": "emailVerification"
+}

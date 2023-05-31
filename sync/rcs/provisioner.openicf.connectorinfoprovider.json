@@ -1,0 +1,49 @@
+{
+  "_id": "provisioner.openicf.connectorinfoprovider",
+  "connectorsLocation": "connectors",
+  "remoteConnectorClients": [
+    {
+      "displayName": "rcs1",
+      "enabled": true,
+      "name": "rcs1",
+      "useSSL": true
+    },
+    {
+      "displayName": "rcs2",
+      "enabled": true,
+      "name": "rcs2",
+      "useSSL": true
+    },
+    {
+      "displayName": "rcs3",
+      "enabled": true,
+      "name": "rcs3",
+      "useSSL": true
+    },
+    {
+      "enabled": true,
+      "name": "rcs0",
+      "useSSL": true
+    }
+  ],
+  "remoteConnectorClientsGroups": [
+    {
+      "algorithm": "failover",
+      "displayName": "rcs",
+      "name": "rcs",
+      "serversList": [
+        {
+          "name": "rcs1"
+        },
+        {
+          "name": "rcs2"
+        },
+        {
+          "name": "rcs3"
+        }
+      ]
+    }
+  ],
+  "remoteConnectorServers": [],
+  "remoteConnectorServersGroups": []
+}

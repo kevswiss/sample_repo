@@ -1,0 +1,118 @@
+{
+  "_id": "64603fd6-e79a-460c-a1d7-4a0e0290c6da",
+  "_rev": "c1b0232e-bb83-453a-a57b-1bfb5300363b-54573",
+  "condition": null,
+  "description": null,
+  "name": "organization-admin",
+  "privileges": [
+    {
+      "accessFlags": [
+        {
+          "attribute": "name",
+          "readOnly": false
+        },
+        {
+          "attribute": "description",
+          "readOnly": false
+        },
+        {
+          "attribute": "owners",
+          "readOnly": false
+        },
+        {
+          "attribute": "admins",
+          "readOnly": false
+        },
+        {
+          "attribute": "members",
+          "readOnly": false
+        },
+        {
+          "attribute": "parent",
+          "readOnly": false
+        },
+        {
+          "attribute": "children",
+          "readOnly": false
+        },
+        {
+          "attribute": "adminIDs",
+          "readOnly": false
+        },
+        {
+          "attribute": "ownerIDs",
+          "readOnly": false
+        },
+        {
+          "attribute": "parentAdminIDs",
+          "readOnly": false
+        },
+        {
+          "attribute": "parentOwnerIDs",
+          "readOnly": false
+        },
+        {
+          "attribute": "parentIDs",
+          "readOnly": false
+        },
+        {
+          "attribute": "eHerkenningID",
+          "readOnly": false
+        },
+        {
+          "attribute": "street",
+          "readOnly": false
+        },
+        {
+          "attribute": "houseNumber",
+          "readOnly": false
+        },
+        {
+          "attribute": "houseNumberAddition",
+          "readOnly": false
+        },
+        {
+          "attribute": "city",
+          "readOnly": false
+        },
+        {
+          "attribute": "postalCode",
+          "readOnly": false
+        },
+        {
+          "attribute": "telephoneNumber",
+          "readOnly": false
+        },
+        {
+          "attribute": "kvk",
+          "readOnly": false
+        },
+        {
+          "attribute": "services",
+          "readOnly": false
+        },
+        {
+          "attribute": "termsOfCondition",
+          "readOnly": false
+        },
+        {
+          "attribute": "flattenedOwnerIds",
+          "readOnly": false
+        },
+        {
+          "attribute": "test",
+          "readOnly": false
+        }
+      ],
+      "actions": [],
+      "name": "Alpha realm - Organizations",
+      "path": "managed/alpha_organization",
+      "permissions": [
+        "VIEW",
+        "CREATE",
+        "UPDATE"
+      ]
+    }
+  ],
+  "temporalConstraints": []
+}

@@ -1,0 +1,16 @@
+{
+  "_id": "",
+  "_rev": "-1331671083",
+  "_type": {
+    "_id": "validation",
+    "collection": false,
+    "name": "Validation Service"
+  },
+  "validGotoDestinations": [
+    "https://www.google.com",
+    "http://host1.example.com/*?*",
+    "https://www.google.com/*?*",
+    "https://openam-fr-kschneider.forgeblocks.com/*?*",
+    "https://host1.example.com"
+  ]
+}

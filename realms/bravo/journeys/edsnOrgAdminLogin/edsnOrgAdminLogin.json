@@ -1,0 +1,104 @@
+{
+  "_id": "edsnOrgAdminLogin",
+  "_rev": "-464359762",
+  "enabled": true,
+  "entryNodeId": "1933c143-2c75-4f79-b70c-e0d799c7159f",
+  "identityResource": "managed/alpha_user",
+  "nodes": {
+    "104a04ce-9311-438a-b66d-9c9a7ffe3925": {
+      "connections": {
+        "FAILURE": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "PATCHED": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+      },
+      "displayName": "Patch User with Org",
+      "nodeType": "PatchObjectNode",
+      "x": 1942,
+      "y": 312.015625
+    },
+    "1933c143-2c75-4f79-b70c-e0d799c7159f": {
+      "connections": {
+        "false": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "true": "9ca4f357-08f6-48a4-9bf2-c034e8b4dec1"
+      },
+      "displayName": "Login with eHerkenning",
+      "nodeType": "InnerTreeEvaluatorNode",
+      "x": 319,
+      "y": 161.125
+    },
+    "31ca0b6e-f277-466e-a1f7-d47d6ccc7eab": {
+      "connections": {
+        "false": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "true": "d030ea83-5205-4b4e-a6c5-c8858e1e2881"
+      },
+      "displayName": "user User _id",
+      "nodeType": "IdentifyExistingUserNode",
+      "x": 1257,
+      "y": 300.125
+    },
+    "79f090d8-58b0-4b52-ab7c-ec1ba0a2c2fc": {
+      "connections": {
+        "next": "104a04ce-9311-438a-b66d-9c9a7ffe3925"
+      },
+      "displayName": "Scr: Prepare vars",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 1729,
+      "y": 215.125
+    },
+    "9ca4f357-08f6-48a4-9bf2-c034e8b4dec1": {
+      "connections": {
+        "next": "eb45b0a7-cbb4-4745-8ae0-f1ef9047ac92"
+      },
+      "displayName": "Scr: Set Attributes",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 556,
+      "y": 189.5
+    },
+    "c6366572-d9fc-4120-968b-ffa8ae6728c7": {
+      "connections": {
+        "CREATED": "31ca0b6e-f277-466e-a1f7-d47d6ccc7eab",
+        "FAILURE": "e301438c-0bd0-429c-ab0c-66126501069a"
+      },
+      "displayName": "create admin user",
+      "nodeType": "CreateObjectNode",
+      "x": 1050,
+      "y": 270
+    },
+    "d030ea83-5205-4b4e-a6c5-c8858e1e2881": {
+      "connections": {
+        "false": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "true": "79f090d8-58b0-4b52-ab7c-ec1ba0a2c2fc"
+      },
+      "displayName": "CreateOrgSkeleton",
+      "nodeType": "InnerTreeEvaluatorNode",
+      "x": 1500,
+      "y": 193.5
+    },
+    "eb45b0a7-cbb4-4745-8ae0-f1ef9047ac92": {
+      "connections": {
+        "false": "c6366572-d9fc-4120-968b-ffa8ae6728c7",
+        "true": "d030ea83-5205-4b4e-a6c5-c8858e1e2881"
+      },
+      "displayName": "Identify Existing User by eHerkenning ID",
+      "nodeType": "IdentifyExistingUserNode",
+      "x": 759,
+      "y": 172.5
+    }
+  },
+  "staticNodes": {
+    "70e691a5-1e33-4ac3-a356-e7b6d60d92e0": {
+      "x": 2196,
+      "y": 191.33333333333331
+    },
+    "e301438c-0bd0-429c-ab0c-66126501069a": {
+      "x": 1306,
+      "y": 475.66666666666663
+    },
+    "startNode": {
+      "x": 70,
+      "y": 190
+    }
+  },
+  "uiConfig": {
+    "categories": "[\"EDSN CONSENT\"]"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "_id": "esv-mcodejwt-issuer",
+  "description": "",
+  "expressionType": "",
+  "valueBase64": "${ESV_MCODEJWT_ISSUER}"
+}

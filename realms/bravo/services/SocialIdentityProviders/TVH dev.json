@@ -1,0 +1,42 @@
+{
+  "_id": "TVH dev",
+  "_type": {
+    "_id": "oidcConfig",
+    "collection": true,
+    "name": "Client configuration for providers that implement the OpenID Connect specification."
+  },
+  "acrValues": [],
+  "authenticationIdKey": "sub",
+  "authorizationEndpoint": "https://openam-tvh-euw1-dev.id.forgerock.io/am/oauth2/alpha/authorize",
+  "clientAuthenticationMethod": "CLIENT_SECRET_POST",
+  "clientId": "kevinImpersonationTest",
+  "clientSecret": null,
+  "enableNativeNonce": true,
+  "enabled": true,
+  "encryptJwtRequestParameter": false,
+  "encryptedIdTokens": false,
+  "introspectEndpoint": "https://openam-tvh-euw1-dev.id.forgerock.io/am/oauth2/alpha/introspect",
+  "issuer": "https://openam-tvh-euw1-dev.id.forgerock.io:443/am/oauth2/alpha",
+  "issuerComparisonCheckType": "EXACT",
+  "jwtEncryptionAlgorithm": "NONE",
+  "jwtEncryptionMethod": "NONE",
+  "jwtRequestParameterOption": "NONE",
+  "jwtSigningAlgorithm": "NONE",
+  "pkceMethod": "S256",
+  "privateKeyJwtExpTime": 600,
+  "redirectURI": "https://openam-fr-kschneider.forgeblocks.com/login",
+  "responseMode": "DEFAULT",
+  "revocationCheckOptions": [],
+  "scopeDelimiter": " ",
+  "scopes": [
+    "openid",
+    "profile"
+  ],
+  "tokenEndpoint": "https://openam-tvh-euw1-dev.id.forgerock.io/am/oauth2/alpha/access_token",
+  "transform": "4d0d9717-8698-4574-9151-14a42a291827",
+  "uiConfig": {},
+  "useCustomTrustStore": false,
+  "userInfoEndpoint": "https://openam-tvh-euw1-dev.id.forgerock.io/am/oauth2/alpha/userinfo",
+  "userInfoResponseType": "JSON",
+  "wellKnownEndpoint": "https://openam-tvh-euw1-dev.id.forgerock.io/am/oauth2/realms/alpha/.well-known/openid-configuration"
+}

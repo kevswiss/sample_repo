@@ -1,0 +1,20 @@
+{
+  "_id": "d030ea83-5205-4b4e-a6c5-c8858e1e2881",
+  "_outcomes": [
+    {
+      "displayName": "True",
+      "id": "true"
+    },
+    {
+      "displayName": "False",
+      "id": "false"
+    }
+  ],
+  "_rev": "786536434",
+  "_type": {
+    "_id": "InnerTreeEvaluatorNode",
+    "collection": true,
+    "name": "Inner Tree Evaluator"
+  },
+  "tree": "edsnCreateOrgSkeleton"
+}

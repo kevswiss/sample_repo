@@ -1,0 +1,44 @@
+{
+  "_id": "HL-secure-number",
+  "_rev": "1696864954",
+  "enabled": true,
+  "entryNodeId": "e0a9dbd4-c14d-48ed-b8f2-590fa72bc632",
+  "identityResource": "managed/alpha_user",
+  "nodes": {
+    "80190a13-e665-4ff8-9a2e-7a8f07a3566f": {
+      "connections": {
+        "true": "e0a9dbd4-c14d-48ed-b8f2-590fa72bc632"
+      },
+      "displayName": "Scripted Decision",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 196,
+      "y": 222.2534637451172
+    },
+    "e0a9dbd4-c14d-48ed-b8f2-590fa72bc632": {
+      "connections": {
+        "true": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+      },
+      "displayName": "Scripted Decision",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 452,
+      "y": 197.2534637451172
+    }
+  },
+  "staticNodes": {
+    "70e691a5-1e33-4ac3-a356-e7b6d60d92e0": {
+      "x": 859,
+      "y": 102
+    },
+    "e301438c-0bd0-429c-ab0c-66126501069a": {
+      "x": 916,
+      "y": 337
+    },
+    "startNode": {
+      "x": 50,
+      "y": 250
+    }
+  },
+  "uiConfig": {
+    "categories": "[]"
+  }
+}

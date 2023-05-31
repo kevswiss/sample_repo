@@ -1,0 +1,6 @@
+{
+  "_id": "esv-jwt-jwksjson",
+  "description": "",
+  "expressionType": "string",
+  "valueBase64": "${ESV_JWT_JWKSJSON}"
+}

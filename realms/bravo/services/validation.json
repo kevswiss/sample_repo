@@ -1,0 +1,12 @@
+{
+  "_id": "",
+  "_rev": "-1419214880",
+  "_type": {
+    "_id": "validation",
+    "collection": false,
+    "name": "Validation Service"
+  },
+  "validGotoDestinations": [
+    "https://openam-fr-kschneider.forgeblocks.com/*?*"
+  ]
+}

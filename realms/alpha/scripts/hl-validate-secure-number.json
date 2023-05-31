@@ -1,0 +1,15 @@
+{
+  "_id": "90a0b605-e1b3-4548-8174-fb39246b7150",
+  "context": "AUTHENTICATION_TREE_DECISION_NODE",
+  "createdBy": "null",
+  "creationDate": 0,
+  "default": false,
+  "description": "null",
+  "language": "JAVASCRIPT",
+  "lastModifiedBy": "null",
+  "lastModifiedDate": 0,
+  "name": "hl-validate-secure-number",
+  "script": {
+    "file": "scripts-content/AUTHENTICATION_TREE_DECISION_NODE/hl-validate-secure-number.js"
+  }
+}

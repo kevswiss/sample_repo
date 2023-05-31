@@ -1,0 +1,161 @@
+{
+  "name": "providerService",
+  "schema": {
+    "$schema": "http://forgerock.org/json-schema#",
+    "description": null,
+    "icon": "fa-database",
+    "order": [
+      "name",
+      "description",
+      "parentName",
+      "version",
+      "status",
+      "subscribers",
+      "serviceEndpoint",
+      "clientSecret",
+      "redirectUris",
+      "loa",
+      "singleRequestEndpoint",
+      "bulkRequestEndpoint",
+      "deliveryEndpoint",
+      "docUrl",
+      "apiUrl",
+      "subscriptionEndpoint",
+      "parentOwnerIDs"
+    ],
+    "properties": {
+      "apiUrl": {
+        "searchable": true,
+        "title": null,
+        "type": "string",
+        "userEditable": true,
+        "viewable": true
+      },
+      "bulkRequestEndpoint": {
+        "searchable": true,
+        "title": null,
+        "type": "string",
+        "userEditable": true,
+        "viewable": true
+      },
+      "clientSecret": {
+        "searchable": true,
+        "title": null,
+        "type": "string",
+        "userEditable": true,
+        "viewable": true
+      },
+      "deliveryEndpoint": {
+        "searchable": true,
+        "title": null,
+        "type": "string",
+        "userEditable": true,
+        "viewable": true
+      },
+      "description": {
+        "searchable": true,
+        "title": "Desc",
+        "type": "string",
+        "userEditable": true,
+        "viewable": true
+      },
+      "docUrl": {
+        "searchable": true,
+        "title": null,
+        "type": "string",
+        "userEditable": true,
+        "viewable": true
+      },
+      "loa": {
+        "searchable": true,
+        "title": null,
+        "type": "string",
+        "userEditable": true,
+        "viewable": true
+      },
+      "name": {
+        "searchable": true,
+        "title": "name",
+        "type": "string",
+        "userEditable": true,
+        "viewable": true
+      },
+      "parentName": {
+        "searchable": true,
+        "title": null,
+        "type": "string",
+        "userEditable": true,
+        "viewable": true
+      },
+      "parentOwnerIDs": {
+        "items": {
+          "type": "string"
+        },
+        "searchable": false,
+        "title": null,
+        "type": "array",
+        "userEditable": true,
+        "viewable": true
+      },
+      "redirectUris": {
+        "searchable": true,
+        "title": null,
+        "type": "string",
+        "userEditable": true,
+        "viewable": true
+      },
+      "serviceEndpoint": {
+        "deleteQueryConfig": false,
+        "description": null,
+        "isVirtual": false,
+        "searchable": true,
+        "title": null,
+        "type": "string",
+        "userEditable": true,
+        "viewable": true
+      },
+      "singleRequestEndpoint": {
+        "searchable": true,
+        "title": null,
+        "type": "string",
+        "userEditable": true,
+        "viewable": true
+      },
+      "status": {
+        "searchable": true,
+        "title": null,
+        "type": "string",
+        "userEditable": true,
+        "viewable": true
+      },
+      "subscribers": {
+        "searchable": true,
+        "title": null,
+        "type": "string",
+        "userEditable": true,
+        "viewable": true
+      },
+      "subscriptionEndpoint": {
+        "searchable": true,
+        "title": null,
+        "type": "string",
+        "userEditable": true,
+        "viewable": true
+      },
+      "version": {
+        "searchable": true,
+        "title": null,
+        "type": "string",
+        "userEditable": true,
+        "viewable": true
+      }
+    },
+    "required": [
+      "name",
+      "description",
+      "serviceEndpoint"
+    ],
+    "title": "Provider Service",
+    "type": "object"
+  }
+}

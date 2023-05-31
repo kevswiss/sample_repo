@@ -1,0 +1,35 @@
+{
+  "_id": "eHerkenningSim",
+  "_rev": "609319809",
+  "enabled": true,
+  "entryNodeId": "2bb34f4e-17d6-41da-b1dc-1f8f6db53ae0",
+  "identityResource": "managed/alpha_user",
+  "nodes": {
+    "2bb34f4e-17d6-41da-b1dc-1f8f6db53ae0": {
+      "connections": {
+        "true": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+      },
+      "displayName": "Collect eHerkenning data",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 368,
+      "y": 281.125
+    }
+  },
+  "staticNodes": {
+    "70e691a5-1e33-4ac3-a356-e7b6d60d92e0": {
+      "x": 1031,
+      "y": 105.33333333333333
+    },
+    "e301438c-0bd0-429c-ab0c-66126501069a": {
+      "x": 564,
+      "y": 490.66666666666663
+    },
+    "startNode": {
+      "x": 70,
+      "y": 190
+    }
+  },
+  "uiConfig": {
+    "categories": "[\"EDSN CONSENT\"]"
+  }
+}

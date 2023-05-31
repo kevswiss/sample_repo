@@ -1,0 +1,39 @@
+{
+  "name": "clientrolemapping",
+  "schema": {
+    "$schema": "http://forgerock.org/json-schema#",
+    "description": "Maps roles to oauth clients",
+    "icon": "fa-ambulance",
+    "order": [
+      "clientId",
+      "roles"
+    ],
+    "properties": {
+      "clientId": {
+        "searchable": true,
+        "title": null,
+        "type": "string",
+        "userEditable": true,
+        "viewable": true
+      },
+      "roles": {
+        "deleteQueryConfig": false,
+        "description": null,
+        "isVirtual": false,
+        "items": {
+          "type": "string"
+        },
+        "searchable": false,
+        "title": "Roles",
+        "type": "array",
+        "userEditable": true,
+        "viewable": true
+      }
+    },
+    "required": [
+      "clientId"
+    ],
+    "title": "mapping roles to clients",
+    "type": "object"
+  }
+}

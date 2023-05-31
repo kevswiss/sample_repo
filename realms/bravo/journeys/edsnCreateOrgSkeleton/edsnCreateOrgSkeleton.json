@@ -1,0 +1,74 @@
+{
+  "_id": "edsnCreateOrgSkeleton",
+  "_rev": "-1062380933",
+  "enabled": true,
+  "entryNodeId": "94a2adfc-bc8b-4765-9a32-1602b0c9abfd",
+  "identityResource": "managed/alpha_organization",
+  "nodes": {
+    "68f10181-d3e6-4e8b-888a-01c0f250ab0c": {
+      "connections": {
+        "CREATED": "74cdad54-dc24-4a16-9352-d80bc86135be",
+        "FAILURE": "e301438c-0bd0-429c-ab0c-66126501069a"
+      },
+      "displayName": "Create Organization Skeleton",
+      "nodeType": "CreateObjectNode",
+      "x": 597,
+      "y": 368
+    },
+    "74cdad54-dc24-4a16-9352-d80bc86135be": {
+      "connections": {
+        "false": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "true": "a341acbc-2765-402c-b6c3-1894bb683d7e"
+      },
+      "displayName": "Get org ID",
+      "nodeType": "IdentifyExistingUserNode",
+      "x": 878,
+      "y": 377.125
+    },
+    "7ec07fa3-c5fe-4e93-b6d3-5323037f61e9": {
+      "connections": {
+        "false": "68f10181-d3e6-4e8b-888a-01c0f250ab0c",
+        "true": "a341acbc-2765-402c-b6c3-1894bb683d7e"
+      },
+      "displayName": "Identify Existing User",
+      "nodeType": "IdentifyExistingUserNode",
+      "x": 440,
+      "y": 172.5
+    },
+    "94a2adfc-bc8b-4765-9a32-1602b0c9abfd": {
+      "connections": {
+        "next": "7ec07fa3-c5fe-4e93-b6d3-5323037f61e9"
+      },
+      "displayName": "Scr: Prepare Org Search",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 210,
+      "y": 197.5
+    },
+    "a341acbc-2765-402c-b6c3-1894bb683d7e": {
+      "connections": {
+        "next": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+      },
+      "displayName": "Scr: Swap OA Back to State",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 1138,
+      "y": 235.33333333333331
+    }
+  },
+  "staticNodes": {
+    "70e691a5-1e33-4ac3-a356-e7b6d60d92e0": {
+      "x": 1607,
+      "y": 190
+    },
+    "e301438c-0bd0-429c-ab0c-66126501069a": {
+      "x": 1006,
+      "y": 841.1666666666666
+    },
+    "startNode": {
+      "x": 70,
+      "y": 190
+    }
+  },
+  "uiConfig": {
+    "categories": "[\"EDSN CONSENT\"]"
+  }
+}

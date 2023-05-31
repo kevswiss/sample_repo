@@ -1,0 +1,55 @@
+{
+  "_id": "employeeLogin",
+  "_rev": "2116857210",
+  "enabled": true,
+  "entryNodeId": "3bffb10f-3982-4524-aad4-4c6ee31e0dd4",
+  "identityResource": "managed/alpha_user",
+  "nodes": {
+    "1d2c3890-3835-47d0-9b11-38e9cc49c63c": {
+      "connections": {
+        "error": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "true": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+      },
+      "displayName": "Scripted Decision",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 1056,
+      "y": 664.015625
+    },
+    "3bffb10f-3982-4524-aad4-4c6ee31e0dd4": {
+      "connections": {
+        "socialAuthentication": "8f1f7731-c261-4b58-b623-5f20fd74483f"
+      },
+      "displayName": "Select Identity Provider",
+      "nodeType": "SelectIdPNode",
+      "x": 333,
+      "y": 449.015625
+    },
+    "8f1f7731-c261-4b58-b623-5f20fd74483f": {
+      "connections": {
+        "ACCOUNT_EXISTS": "1d2c3890-3835-47d0-9b11-38e9cc49c63c",
+        "NO_ACCOUNT": "1d2c3890-3835-47d0-9b11-38e9cc49c63c"
+      },
+      "displayName": "Social Provider Handler Node",
+      "nodeType": "SocialProviderHandlerNode",
+      "x": 658,
+      "y": 425.015625
+    }
+  },
+  "staticNodes": {
+    "70e691a5-1e33-4ac3-a356-e7b6d60d92e0": {
+      "x": 1240,
+      "y": 121
+    },
+    "e301438c-0bd0-429c-ab0c-66126501069a": {
+      "x": 1225,
+      "y": 347
+    },
+    "startNode": {
+      "x": 50,
+      "y": 250
+    }
+  },
+  "uiConfig": {
+    "categories": "[\"TVH CIAM\"]"
+  }
+}

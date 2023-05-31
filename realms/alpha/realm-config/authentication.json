@@ -1,0 +1,65 @@
+{
+  "_id": "",
+  "_rev": "-1271119046",
+  "_type": {
+    "_id": "EMPTY",
+    "collection": false,
+    "name": "Core"
+  },
+  "accountlockout": {
+    "lockoutDuration": 10,
+    "lockoutDurationMultiplier": 1,
+    "lockoutWarnUserCount": 0,
+    "loginFailureCount": 2,
+    "loginFailureDuration": 300,
+    "loginFailureLockoutMode": false,
+    "storeInvalidAttemptsInDataStore": false
+  },
+  "core": {
+    "adminAuthModule": "Login",
+    "orgConfig": "Login"
+  },
+  "general": {
+    "defaultAuthLevel": 0,
+    "identityType": [
+      "agent",
+      "user"
+    ],
+    "locale": "en_US",
+    "statelessSessionsEnabled": false,
+    "twoFactorRequired": false,
+    "userStatusCallbackPlugins": []
+  },
+  "postauthprocess": {
+    "loginFailureUrl": [],
+    "loginPostProcessClass": [],
+    "loginSuccessUrl": [
+      "/enduser/?realm=/alpha"
+    ],
+    "userAttributeSessionMapping": [],
+    "usernameGeneratorClass": "com.sun.identity.authentication.spi.DefaultUserIDGenerator",
+    "usernameGeneratorEnabled": true
+  },
+  "security": {
+    "keyAlias": "test",
+    "moduleBasedAuthEnabled": false,
+    "sharedSecret": null,
+    "zeroPageLoginAllowedWithoutReferrer": true,
+    "zeroPageLoginEnabled": false,
+    "zeroPageLoginReferrerWhiteList": []
+  },
+  "trees": {
+    "authenticationSessionsMaxDuration": 30,
+    "authenticationSessionsStateManagement": "JWT",
+    "authenticationSessionsWhitelist": false,
+    "authenticationTreeCookieHttpOnly": false,
+    "suspendedAuthenticationTimeout": 1440
+  },
+  "userprofile": {
+    "aliasAttributeName": [
+      "uid"
+    ],
+    "defaultRole": [],
+    "dynamicProfileCreation": "ignore"
+  }
+}

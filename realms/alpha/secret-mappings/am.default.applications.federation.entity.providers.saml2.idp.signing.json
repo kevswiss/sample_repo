@@ -1,0 +1,13 @@
+{
+  "_id": "am.default.applications.federation.entity.providers.saml2.idp.signing",
+  "_rev": "1454741165",
+  "_type": {
+    "_id": "mappings",
+    "collection": true,
+    "name": "Mappings"
+  },
+  "aliases": [
+    "esv-samlkeypair"
+  ],
+  "secretId": "am.default.applications.federation.entity.providers.saml2.idp.signing"
+}

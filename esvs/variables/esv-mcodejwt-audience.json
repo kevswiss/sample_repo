@@ -1,0 +1,6 @@
+{
+  "_id": "esv-mcodejwt-audience",
+  "description": "",
+  "expressionType": "",
+  "valueBase64": "${ESV_MCODEJWT_AUDIENCE}"
+}

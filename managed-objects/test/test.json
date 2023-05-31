@@ -1,0 +1,39 @@
+{
+  "name": "test",
+  "schema": {
+    "$schema": "http://forgerock.org/json-schema#",
+    "description": null,
+    "icon": "fa-database",
+    "order": [
+      "user",
+      "mail",
+      "unique"
+    ],
+    "properties": {
+      "mail": {
+        "searchable": true,
+        "title": null,
+        "type": "string",
+        "userEditable": true,
+        "viewable": true
+      },
+      "unique": {
+        "searchable": true,
+        "title": null,
+        "type": "string",
+        "userEditable": true,
+        "viewable": true
+      },
+      "user": {
+        "searchable": true,
+        "title": null,
+        "type": "string",
+        "userEditable": true,
+        "viewable": true
+      }
+    },
+    "required": [],
+    "title": null,
+    "type": "object"
+  }
+}

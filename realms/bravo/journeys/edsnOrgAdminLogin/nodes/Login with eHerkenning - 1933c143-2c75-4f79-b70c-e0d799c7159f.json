@@ -1,0 +1,20 @@
+{
+  "_id": "1933c143-2c75-4f79-b70c-e0d799c7159f",
+  "_outcomes": [
+    {
+      "displayName": "True",
+      "id": "true"
+    },
+    {
+      "displayName": "False",
+      "id": "false"
+    }
+  ],
+  "_rev": "1672699787",
+  "_type": {
+    "_id": "InnerTreeEvaluatorNode",
+    "collection": true,
+    "name": "Inner Tree Evaluator"
+  },
+  "tree": "eHerkenningSim"
+}

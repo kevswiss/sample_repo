@@ -1,0 +1,28 @@
+{
+  "_id": "104a04ce-9311-438a-b66d-9c9a7ffe3925",
+  "_outcomes": [
+    {
+      "displayName": "Patched",
+      "id": "PATCHED"
+    },
+    {
+      "displayName": "Failed",
+      "id": "FAILURE"
+    }
+  ],
+  "_rev": "1649714476",
+  "_type": {
+    "_id": "PatchObjectNode",
+    "collection": true,
+    "name": "Patch Object"
+  },
+  "identityAttribute": "userName",
+  "identityResource": "managed/alpha_user",
+  "ignoredFields": [
+    "frIndexedString3",
+    "frIndexedString1",
+    "givenName",
+    "sn"
+  ],
+  "patchAsObject": false
+}

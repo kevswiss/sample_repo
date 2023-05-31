@@ -1,0 +1,15 @@
+{
+  "_id": "1529cf6e-f9ae-4049-ad0b-e45f5ecab769",
+  "context": "AUTHENTICATION_TREE_DECISION_NODE",
+  "createdBy": "null",
+  "creationDate": 0,
+  "default": false,
+  "description": "null",
+  "language": "JAVASCRIPT",
+  "lastModifiedBy": "null",
+  "lastModifiedDate": 0,
+  "name": "hl-secure-number-page",
+  "script": {
+    "file": "scripts-content/AUTHENTICATION_TREE_DECISION_NODE/hl-secure-number-page.js"
+  }
+}

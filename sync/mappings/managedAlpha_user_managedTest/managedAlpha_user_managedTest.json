@@ -1,0 +1,82 @@
+{
+  "consentRequired": false,
+  "displayName": "managedAlpha_user_managedTest",
+  "icon": null,
+  "name": "managedAlpha_user_managedTest",
+  "policies": [
+    {
+      "action": "EXCEPTION",
+      "situation": "AMBIGUOUS"
+    },
+    {
+      "action": "EXCEPTION",
+      "situation": "SOURCE_MISSING"
+    },
+    {
+      "action": "EXCEPTION",
+      "situation": "MISSING"
+    },
+    {
+      "action": "EXCEPTION",
+      "situation": "FOUND_ALREADY_LINKED"
+    },
+    {
+      "action": "DELETE",
+      "situation": "UNQUALIFIED"
+    },
+    {
+      "action": "EXCEPTION",
+      "situation": "UNASSIGNED"
+    },
+    {
+      "action": "EXCEPTION",
+      "situation": "LINK_ONLY"
+    },
+    {
+      "action": "IGNORE",
+      "situation": "TARGET_IGNORED"
+    },
+    {
+      "action": "IGNORE",
+      "situation": "SOURCE_IGNORED"
+    },
+    {
+      "action": "IGNORE",
+      "situation": "ALL_GONE"
+    },
+    {
+      "action": "UPDATE",
+      "situation": "CONFIRMED"
+    },
+    {
+      "action": "UPDATE",
+      "situation": "FOUND"
+    },
+    {
+      "action": "CREATE",
+      "situation": "ABSENT"
+    }
+  ],
+  "properties": [
+    {
+      "source": "_id",
+      "target": "user"
+    },
+    {
+      "source": "mail",
+      "target": "mail"
+    },
+    {
+      "default": "false",
+      "source": "mail",
+      "target": "unique",
+      "transform": {
+        "globals": {},
+        "source": "var users = openidm.query(\"managed/alpha_user\", { \"_queryFilter\": \"/mail eq \\\"\" + source +\"\\\"\"}, [\"_id\"]);\nusers.resultCount === 1 ? \"true\": \"false\";\n",
+        "type": "text/javascript"
+      }
+    }
+  ],
+  "source": "managed/alpha_user",
+  "target": "managed/test"
+}

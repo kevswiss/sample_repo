@@ -1,0 +1,94 @@
+{
+  "consentRequired": false,
+  "correlationQuery": [
+    {
+      "expressionTree": {
+        "any": [
+          "_id"
+        ]
+      },
+      "file": "ui/correlateTreeToQueryFilter.js",
+      "linkQualifier": "default",
+      "mapping": "managedRoletogroupmap_managedAlpha_role",
+      "type": "text/javascript"
+    }
+  ],
+  "displayName": "managedRoletogroupmap_managedAlpha_role",
+  "icon": null,
+  "name": "managedRoletogroupmap_managedAlpha_role",
+  "policies": [
+    {
+      "action": "ASYNC",
+      "situation": "AMBIGUOUS"
+    },
+    {
+      "action": "ASYNC",
+      "situation": "SOURCE_MISSING"
+    },
+    {
+      "action": "ASYNC",
+      "situation": "MISSING"
+    },
+    {
+      "action": "ASYNC",
+      "situation": "FOUND_ALREADY_LINKED"
+    },
+    {
+      "action": "ASYNC",
+      "situation": "UNQUALIFIED"
+    },
+    {
+      "action": "ASYNC",
+      "situation": "UNASSIGNED"
+    },
+    {
+      "action": "ASYNC",
+      "situation": "LINK_ONLY"
+    },
+    {
+      "action": "ASYNC",
+      "situation": "TARGET_IGNORED"
+    },
+    {
+      "action": "ASYNC",
+      "situation": "SOURCE_IGNORED"
+    },
+    {
+      "action": "ASYNC",
+      "situation": "ALL_GONE"
+    },
+    {
+      "action": "UPDATE",
+      "situation": "CONFIRMED"
+    },
+    {
+      "action": "UPDATE",
+      "situation": "FOUND"
+    },
+    {
+      "action": "CREATE",
+      "situation": "ABSENT"
+    }
+  ],
+  "properties": [
+    {
+      "source": "custom_role_name",
+      "target": "_id"
+    },
+    {
+      "source": "custom_role_name",
+      "target": "name"
+    },
+    {
+      "source": "groupDns",
+      "target": "members",
+      "transform": {
+        "globals": {},
+        "source": "var equalTo = org.forgerock.util.query.QueryFilter.equalTo;\nvar roleMembers = [];\nvar groupMembers = [];\nif (source) {\n    //query nested members for each group\n    for(var j=0; j<source.length; j++){\n        var group=source[j];\n\n        queryParams = {\n            _queryFilter: equalTo(\"nestedMembers\", group).toString(),\n            _fields: \"sAMAccountName\",\n          };\n          adMembers = openidm.query(\"system/LdapConnector/account\", queryParams).result;\n          \n          if (adMembers && adMembers.length > 0) {\n            for (var i = 0; i < adMembers.length; i++) {\n                userName = adMembers[i].sAMAccountName;\n                //if first group to check, add every user found in that group\n                if(j===0){\n                    groupMembers.push(userName);\n                //if not first group to check, only add if found in previous rounds\n                } else{\n                    if(!groupMembers.includes(userName)){\n                        groupMembers.push(userName);\n                    }\n                }\n            }\n          }\n    }\n\n\tfor(var i=0; i< groupMembers.length; i++) {\n        userName = groupMembers[i];\n        queryParams = {\n            _queryFilter: equalTo(\"userName\", userName).toString(),\n            _fields: \"_id\",\n        };\n        userObj = openidm.query(\"managed/alpha_user\", queryParams);\n        if (userObj && userObj.result.length === 1) {\n            roleMembers.push({ _ref: \"managed/alpha_user/\" + userObj.result[0]._id });\n        }\n    }\n    \n\n    roleMembers;\n  \t\n}\n",
+        "type": "text/javascript"
+      }
+    }
+  ],
+  "source": "managed/roleToGroupMap",
+  "target": "managed/alpha_role"
+}

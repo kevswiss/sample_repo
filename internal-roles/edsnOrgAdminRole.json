@@ -1,0 +1,50 @@
+{
+  "_id": "93c6e7bd-d9ea-4d4a-9f63-8ba4fc2880cf",
+  "_rev": "70f988c0-264a-47e5-a24f-8bd5184a1442-4170",
+  "condition": null,
+  "description": null,
+  "name": "edsnOrgAdminRole",
+  "privileges": [
+    {
+      "accessFlags": [
+        {
+          "attribute": "name",
+          "readOnly": false
+        },
+        {
+          "attribute": "description",
+          "readOnly": false
+        },
+        {
+          "attribute": "members",
+          "readOnly": false
+        },
+        {
+          "attribute": "assignments",
+          "readOnly": false
+        },
+        {
+          "attribute": "condition",
+          "readOnly": false
+        },
+        {
+          "attribute": "temporalConstraints",
+          "readOnly": false
+        },
+        {
+          "attribute": "custom_rol_context",
+          "readOnly": false
+        }
+      ],
+      "actions": [],
+      "filter": "/custom_rol_context eq \"{{frUnindexedString5}}\"",
+      "name": "Alpha realm - Roles",
+      "path": "managed/alpha_role",
+      "permissions": [
+        "VIEW",
+        "UPDATE"
+      ]
+    }
+  ],
+  "temporalConstraints": []
+}
